@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/d66a7a980c.js" crossorigin="anonymous"></script>
+      <!-- swiper js -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+      <!-- tailwind -->
+      <link href="dist/output.css" rel="stylesheet" />
+   </head>
+   <body class="font-poppins box-border">
+      <header class="2xl:container 2xl:mx-auto">
+         <nav id="navbar" class="p-5 md:px-14 md:py-4 flex justify-between items-center w-full fixed top-0 z-50 duration-300">
+            <div class="navbrand w-full flex items-center space-x-3">
+               <img src="assets/image/fruits.png" alt="" class="w-14" />
+               <a href="./" class="text-xl capitalize font-extrabold text-green-600 font-montserrat">freshFruit</a>
+            </div>
+            <i id="nav-toggle" class="fa-solid fa-bars fa-2x cursor-pointer md:hidden z-50"></i>
+            <ul
+               id="nav-list"
+               class="bg-emerald-100 flex flex-col space-y-8 w-56 absolute top-[100px] shadow-xl right-5 py-10 text-center translate-x-[150%] rounded-b-3xl rounded-tl-3xl md:translate-x-0 md:flex-row md:space-x-10 md:space-y-0 md:py-0 md:relative md:top-0 md:bg-transparent md:w-fit md:shadow-none transition-all duration-500"
+            >
+               <li class=""><a href="#" class="text-base font-medium capitalize hover:text-green-500 hover:border-b-green-800 transition-all duration-300">home</a></li>
+               <li class=""><a href="#about" class="text-base font-medium capitalize hover:text-green-500 hover:border-b-green-800 transition-all duration-300">about</a></li>
+               <li class=""><a href="#product" class="text-base font-medium capitalize hover:text-green-500 hover:border-b-green-800 transition-all duration-300">product</a></li>
+               <li class="">
+                  <a href="#subscribe" class="text-base font-medium capitalize hover:text-green-500 hover:border-b-green-800 transition-all duration-300">contact</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main class="2xl:container 2xl:mx-auto">
+         <!-- jumbotron -->
+         <section class="bg-emerald-50 py-16 md:px-14 px-5 h-auto w-full flex justify-center content-center flex-col md:flex-row-reverse md:items-center md:h-screen md:py-0">
+            <div class="image-banner pt-4 md:w-1/2">
+               <img src="assets/image/Group 1.png" alt="hero image" class="w-[300px] mb-4 mx-auto md:mr-0 md:w-[460px] lg:w-[500px] lg:pt-10" />
+            </div>
+            <div class="hero-text flex flex-col md:w-1/2 md:pt-8 space-y-4">
+               <h2 class="md:text-5xl font-montserrat font-medium text-gray-900 text-center md:text-start lg:leading-tight lg:text-6xl">
+                  Just <span class="font-bold font-poppins text-green-600">Eat Healthy</span> fruit to live a healthier life
+               </h2>
+               <p class="text-center md:text-start">
+                  Fruits are a very good source of dietary fiber for the body. The benefits of eating fruit every day can help maintain intestinal health, prevent constipation, and other digestive problems.
+               </p>
+               <a
+                  href="#product"
+                  class="mx-auto py-3 px-5 text-white capitalize font-medium tracking-wide shadow-lg shadow-green-200 bg-gradient-to-t from-green-500 to-green-400 hover:shadow-sm hover:bg-gradient-to-t hover:from-green-600 hover:to-green-500 transition-all duration-300 rounded-3xl md:ml-0"
+                  >order now</a
+               >
+            </div>
+         </section>
+
+         <!-- section promo -->
+         <section id="promo" class="h-full w-full px-5 py-16 md:px-14">
+            <h5 class="text-center font-semibold capitalize">deals of the day</h5>
+            <div class="swiper mySwiper my-8">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide w-fit">
+                     <div class="card mx-2 py-4 px-2 bg-slate-100 relative flex shadow-md w-[300px] rounded-xl hover:shadow-inner overflow-hidden transition-all duration-500">
+                        <img src="assets/image/Kiwi.png" alt="kiwi" class="w-[140px] h-[140px]" />
+                        <div class="flex flex-col pb-7">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">kiwi</h4>
+                           <p class="leading-8 line-through text-slate-500">Rp15.000</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <span class="absolute bg-yellow-400 text-center pt-10 px-12 pb-2 -top-6 -left-14 -rotate-45 text-sm font-semibold text-slate-50">-30%</span>
+                        <i class="fa-solid fa-cart-plus fa-xl pt-6 pl-4 pr-8 pb-9 bg-green-500 text-slate-50 rounded-3xl absolute -bottom-4 -right-4 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card mx-2 py-4 px-2 bg-slate-100 relative flex shadow-md w-[300px] rounded-xl hover:shadow-inner overflow-hidden transition-all duration-500">
+                        <img src="assets/image/avocado.png" alt="kiwi" class="w-[140px] h-[140px]" />
+                        <div class="flex flex-col pb-7">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">avocado</h4>
+                           <p class="leading-8 line-through text-slate-500">Rp15.000</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <span class="absolute bg-yellow-400 text-center pt-10 px-12 pb-2 -top-6 -left-14 -rotate-45 text-sm font-semibold text-slate-50">-30%</span>
+                        <i class="fa-solid fa-cart-plus fa-xl pt-6 pl-4 pr-8 pb-9 bg-green-500 text-slate-50 rounded-3xl absolute -bottom-4 -right-4 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card mx-2 py-4 px-2 bg-slate-100 relative flex shadow-md w-[300px] rounded-xl hover:shadow-inner overflow-hidden transition-all duration-500">
+                        <img src="assets/image/manggo.png" alt="kiwi" class="w-[140px] h-[140px]" />
+                        <div class="flex flex-col pb-7">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">mango</h4>
+                           <p class="leading-8 line-through text-slate-500">Rp15.000</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <span class="absolute bg-yellow-400 text-center pt-10 px-12 pb-2 -top-6 -left-14 -rotate-45 text-sm font-semibold text-slate-50">-30%</span>
+                        <i class="fa-solid fa-cart-plus fa-xl pt-6 pl-4 pr-8 pb-9 bg-green-500 text-slate-50 rounded-3xl absolute -bottom-4 -right-4 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card mx-2 py-4 px-2 bg-slate-100 relative flex shadow-md w-[300px] rounded-xl hover:shadow-inner overflow-hidden transition-all duration-500">
+                        <img src="assets/image/guava.png" alt="kiwi" class="w-[140px] h-[140px]" />
+                        <div class="flex flex-col pb-7">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">guava</h4>
+                           <p class="leading-8 line-through text-slate-500">Rp15.000</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <span class="absolute bg-yellow-400 text-center pt-10 px-12 pb-2 -top-6 -left-14 -rotate-45 text-sm font-semibold text-slate-50">-30%</span>
+                        <i class="fa-solid fa-cart-plus fa-xl pt-6 pl-4 pr-8 pb-9 bg-green-500 text-slate-50 rounded-3xl absolute -bottom-4 -right-4 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-promo text-center">
+               <i class="fa-solid fa-arrow-left mr-2 p-2 border-solid border-2 border-neutral-900 rounded-md cursor-not-allowed hover:bg-green-500 hover:border-green-500 hover:text-white transition-all"></i>
+               <i class="fa-solid fa-arrow-right ml-2 p-2 border-solid border-2 border-neutral-900 rounded-md cursor-not-allowed hover:bg-green-500 hover:border-green-500 hover:text-white transition-all"></i>
+            </div>
+         </section>
+
+         <!-- section about us -->
+         <section id="about" class="bg-emerald-50 flex content-center justify-center flex-col py-16 md:px-14 px-5 md:flex-row md:space-x-8 md:items-center md:h-screen">
+            <div class="image-wrapper overflow-hidden rounded-xl shadow-md md:h-fit md:w-1/2">
+               <img src="assets/image/tangan megang buah.jpg" class="w-full rounded-xl scale-125 hover:scale-100 transition-all duration-500" alt="" />
+            </div>
+            <div class="desc-wrapper md:w-1/2 mt-5">
+               <h3 class="capitalize font-bold text-emerald-900">we are organic farm</h3>
+               <p class="my-4 text-neutral-700">You should eat at least five servings of vegetables and two servings of fruit every day. let's choose a different color and variant every day</p>
+               <div class="icon-wrapper space-y-4">
+                  <div class="list-desc flex">
+                     <i class="fa-solid fa-seedling p-4 bg-gradient-to-b from-green-400 to-green-500 rounded-full text-white shadow-lg shadow-green-300"></i>
+                     <p class="my-auto ml-4 font-medium capitalize">100% fresh from nature</p>
+                  </div>
+                  <div class="list-desc flex">
+                     <i class="fa-solid fa-star p-4 bg-gradient-to-b from-amber-400 to-amber-500 rounded-full text-white shadow-lg shadow-amber-300"></i>
+                     <p class="my-auto ml-4 font-medium capitalize">premium quality</p>
+                  </div>
+                  <div class="list-desc flex">
+                     <i class="fa-solid fa-hand-holding-medical p-4 bg-gradient-to-b from-rose-400 to-rose-500 rounded-full text-white shadow-lg shadow-rose-300"></i>
+                     <p class="my-auto ml-4 font-medium capitalize">healthy</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- section products -->
+         <section id="product" class="py-16 md:px-14 px-5">
+            <h3 class="capitalize font-bold text-emerald-900 text-center">our products</h3>
+            <!--  -->
+            <div class="swiper mySwiper my-8">
+               <div class="swiper-wrapper flex space-x-4 justify-between">
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/Kiwi.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">kiwi</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Kiwi fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/avocado.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">avocado</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Avocado fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/banana.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">banana</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Banana fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/guava.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">guava</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Guava fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- row 2 -->
+            <div id="product2" class="swiper mySwiper pb-12 hidden">
+               <div class="swiper-wrapper flex space-x-4 justify-between">
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/jerukbali.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">jeruk bali</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Kiwi fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/jeruknipis.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">jeruk nipis</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Guava fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/manggo.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">mango</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Mango fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card relative overflow-hidden py-5 px-4 bg-slate-100 flex flex-col shadow-md w-[250px] rounded-xl hover:shadow-inner transition-all duration-500">
+                        <img src="assets/image/Apple.png" alt="kiwi" class="w-full h-[195px]" />
+                        <div class="card-text relative">
+                           <h4 class="text-green-600 font-bold mb-2 capitalize">apple</h4>
+                           <p class="text-sm mb-5 h-16 w-full line-clamp-3">Apple fruit has various health benefits, such as helping to reduce blood pressure, promoting wound healing, and helping maintain gut health.</p>
+                           <p class="font-semibold text-lg">Rp15.000</p>
+                        </div>
+                        <i class="fa-solid fa-cart-plus fa-2x py-4 px-4 bg-green-500 text-slate-50 rounded-tl-3xl absolute bottom-0 right-0 hover:bg-green-600 transition duration-300 cursor-pointer"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button
+               id="btnLoadMore"
+               class="mx-auto py-4 px-6 bg-gradient-to-t from-green-500 to-green-400 hover:shadow-sm hover:bg-gradient-to-t hover:from-green-600 hover:to-green-500 font-semibold capitalize text-white rounded-3xl shadow-lg shadow-green-200 transition-all duration-300"
+            >
+               load more
+            </button>
+         </section>
+
+         <!-- section video  -->
+         <section class="py-16 md:px-14 px-5 md:h-screen">
+            <h3 class="capitalize font-bold text-emerald-900 text-center mb-5">fresh goods <span class="text-green-600">from nature</span></h3>
+            <div class="h-80 bg-slate-200 rounded-xl overflow-hidden border-4 border-slate-300 shadow-lg md:h-4/5">
+               <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/UB9A8EX8150"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+               ></iframe>
+            </div>
+         </section>
+
+         <!-- section review customer -->
+         <section class="py-16 md:px-14 px-5 bg-emerald-50">
+            <h3 class="capitalize font-bold text-emerald-900 text-center mb-10">what our customers say</h3>
+            <div class="swiper mySwiperReview pb-24 flex space-x-">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide w-fit">
+                     <div class="card w-96 bg-slate-50 p-6 rounded-xl shadow-lg text-center">
+                        <i class="fa-solid fa-quote-left fa-2x mb-4 text-teal-900"></i>
+                        <p class="mb-4 text-neutral-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet quisquam. Nobis hic veniam repellendus.</p>
+                        <h6 class="font-semibold capitalize text-green-600">anies baswedan</h6>
+                        <img src="assets/image/aniesbaswedan.jpg" class="rounded-full w-24 h-24 border-8 border-slate-50 mx-auto -mb-16 shadow-lg" alt="" />
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card w-96 bg-slate-50 p-6 rounded-xl shadow-lg text-center">
+                        <i class="fa-solid fa-quote-left fa-2x mb-4 text-teal-900"></i>
+                        <p class="mb-4 text-neutral-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet quisquam. Nobis hic veniam repellendus.</p>
+                        <h6 class="font-semibold capitalize text-green-600">markzuckerberg</h6>
+                        <img src="assets/image/markzuckerberg.jpg" class="rounded-full w-24 h-24 border-8 border-slate-50 mx-auto -mb-16 shadow-lg" alt="" />
+                     </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                     <div class="card w-96 bg-slate-50 p-6 rounded-xl shadow-lg text-center">
+                        <i class="fa-solid fa-quote-left fa-2x mb-4 text-teal-900"></i>
+                        <p class="mb-4 text-neutral-800">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, deserunt consequuntur atque dolore architecto earum! .Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit. Officiis, eveniet quisquam. Nobis hic veniam repellendus.
+                        </p>
+                        <h6 class="font-semibold capitalize text-green-600">elon musk</h6>
+                        <img src="assets/image/elon-musk.jpeg" class="rounded-full w-24 h-24 border-8 border-slate-50 mx-auto -mb-16 shadow-lg" alt="" />
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- newsletter card-->
+            <div id="subscribe" class="mx-auto max-w-[560px] shadow-lg flex flex-col justify-between items-center space-y-4 bg-slate-50 rounded-xl mt-24 overflow-hidden">
+               <div class="img-wrapper w-full h-36 overflow-hidden">
+                  <img src="assets/image/fruits_and_vegetables.jpg" alt="" />
+               </div>
+               <div class="card-text space-y-2 pb-8 px-4">
+                  <h5 class="text-xl font-bold">Subscribe Newsletter</h5>
+                  <p class="text-sm">FreshFruit is a safe and reliable e-commerce. What are you waiting for, come subscribe with us to get interesting offers every day</p>
+                  <form action="" class="flex space-x-3">
+                     <input
+                        type="email"
+                        name="email"
+                        class="px-3 py-2 bg-white border shadow-lg border-slate-300 placeholder-slate-400 focus:outline-none focus:border-green-500 focus:ring-green-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        placeholder="you@example.com"
+                     />
+                     <button
+                        type="submit"
+                        class="bg-gradient-to-t from-green-500 to-green-400 hover:shadow-sm hover:bg-gradient-to-t hover:from-green-600 hover:to-green-500 px-4 rounded-lg font-semibold text-white shadow-lg transition-all duration-300"
+                     >
+                        Send
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- footer section -->
+      <section class="2xl:container 2xl:mx-auto footer text-base bg-gray-900 text-gray-500 l py-16 md:px-14 px-5 flex flex-col space-y-7 sm:grid sm:grid-cols-3 sm:gap-4 md:grid-cols-5 md:gap-8">
+         <div class="col sm:col-span-3 md:col-span-2">
+            <h4 class="font-bold text-green-500 mb-3">FreshFRuit</h4>
+            <ul class="space-y-2">
+               <li>
+                  <p>
+                     We are ready to serve your vitamin needs every day, live healthier from now on, as the wakanda proverb says
+                     <span class="italic hover:text-green-400 hover:underline capitalize">"cintai ususMu makan buah setiap hari"</span>
+                  </p>
+               </li>
+               <li>
+                  <a href="./" class="hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">client@gmail.com</a>
+               </li>
+               <li>
+                  <a href="./" class="hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">+62123456789</a>
+               </li>
+               <li>
+                  <a href="./" class="hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">Jl. Gamias Sibanggede, Bali</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col">
+            <h6 class="text-lg font-medium text-gray-300 mb-3">About</h6>
+            <ul class="space-y-2">
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">about us</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">features</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">news</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col">
+            <h5 class="font-medium text-gray-300 mb-3">Company</h5>
+            <ul class="space-y-2">
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">why FreshFruit?</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">partner with us</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col">
+            <h5 class="font-medium text-gray-300 mb-3">Support</h5>
+            <ul class="space-y-2">
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">FAQ</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">account</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">support center</a>
+               </li>
+               <li>
+                  <a href="./" class="capitalize hover:text-gray-300 hover:underline hover:decoration-solid hover:decoration-green-500 transition-all duration-300">contact us</a>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <footer class="2xl:container 2xl:mx-auto text-center py-8 bg-gray-900 text-gray-400">
+         <p>Created with <i class="fa-solid fa-heart text-rose-500 hover:animate-ping"></i> by Kadek Dwiki</p>
+      </footer>
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- script js -->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
